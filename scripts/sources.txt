@@ -1,0 +1,6 @@
+# Source1: https://learnaddict.com/2016/02/23/modifying-a-raspberry-pi-raspbian-image-on-linux/
+# Source2: https://unix.stackexchange.com/questions/342463/mount-multiple-partitions-from-disk-image-simultaneously#342466
+# Source3: https://linux.die.net/man/8/mount
+# Source4: https://linux.die.net/man/8/losetup
+
+# Extra: https://coderwall.com/p/quflrg/run-a-script-on-startup-in-a-detached-screen-on-a-raspberry-pi

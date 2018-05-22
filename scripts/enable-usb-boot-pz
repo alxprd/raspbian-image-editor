@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source /scripts/clean-cache
+source /scripts/download
+source /scripts/mount
+source /scripts/enable-ssh
+source /scripts/enable-usb

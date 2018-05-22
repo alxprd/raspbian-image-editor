@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo FDISK:
+fdisk -l raspbian.img
+
+echo MOUNT BOOT:
+echo "start:"
+#read offset_boot
+offset_boot=8192
+echo $offset_boot
+echo "sectors:"
+#read size_boot
+size_boot=88262
+echo $size_boot
+mkdir -p /mnt/image/boot
+mount -v -o offset=$(($offset_boot*512)),sizelimit=$(($size_boot*512)) -t vfat raspbian.img /mnt/image/boot
+ls /mnt/image/boot
+
+echo MOUNT FILESYSTEM:
+echo "start:"
+#read offset_filesystem
+offset_filesystem=98304
+echo $offset_filesystem
+echo "sectors:"
+#read size_filesystem
+size_filesystem=3538944
+echo $size_filesystem
+mkdir -p /mnt/image/filesystem
+mount -v -o offset=$(($offset_filesystem*512)),sizelimit=$(($size_filesystem*512)) -t ext4 raspbian.img /mnt/image/filesystem
+ls /mnt/image/filesystem

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./run /scripts/enable-usb-boot-pz

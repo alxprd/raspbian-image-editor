@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mv /mnt/image/boot/config.txt /mnt/image/boot/config.txt.orig
+patch /mnt/image/boot/config.txt.orig -i /scripts/files/config.txt.patch -o /mnt/image/boot/config.txt
+rm /mnt/image/boot/config.txt.orig
+echo "Patched boot/config.txt"
+
+mv /mnt/image/boot/cmdline.txt /mnt/image/boot/cmdline.txt.orig
+patch /mnt/image/boot/cmdline.txt.orig -i /scripts/files/cmdline.txt.patch -o /mnt/image/boot/cmdline.txt
+rm /mnt/image/boot/cmdline.txt.orig
+echo "Patched boot/cmdline.txt"

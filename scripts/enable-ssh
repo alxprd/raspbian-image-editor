@@ -1,0 +1,4 @@
+#!/bin/bash
+
+touch /mnt/image/boot/ssh
+echo "Created ssh file in boot partition."

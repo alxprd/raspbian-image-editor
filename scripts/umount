@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo UMOUNT:
+umount /mnt/image/boot
+umount /mnt/image/filesystem 
+
+rm -rf /mnt/image
