@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /mnt/image/filesystem/home/pi/
+mkdir scripts
+cd scripts
+git clone https://github.com/alxprd/raspbian-scripts.git .
+cd ~

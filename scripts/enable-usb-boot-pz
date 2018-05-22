@@ -8,4 +8,6 @@ source /scripts/mount
 source /scripts/enable-ssh
 source /scripts/enable-usb
 
+source /scripts/install-scripts
+
 source /scripts/umount
